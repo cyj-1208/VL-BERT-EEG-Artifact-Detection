@@ -17,3 +17,4 @@ python preprocessing.py
 ```
 python preprocessing_cgmh.py
 ```
+![Preprocessing](STFT_prompt.png)

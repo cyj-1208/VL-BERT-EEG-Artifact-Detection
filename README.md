@@ -2,4 +2,4 @@
 Construct the Channel-Wise VL-BERT-based EEG artifact detection framework that integrates textual and visual EEG representations through a multimodal feature fusion strategy to enhance artifact recognition. 
 
 ## Pipeline
-![Pipeline](pipeline.png)
+![Pipeline](workflow.png)

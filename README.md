@@ -10,11 +10,11 @@ This Pipeline implements a Channel-Wise Vision-Language BERT framework for EEG a
 * Environment：PyTorch 2.5.1、Hugging Face Transformers 4.51.3、Python 3.11.10、Ubuntu 24.04.1 LTS
 ## Datasets
 ## Preprocessing
-Continuous EEG recordings are segmented into 2-second windows with a 1-second overlap, and each segment is converted into a textual prompt, as illustrated in the example below.
+Continuous EEG recordings are segmented into 2-second windows with a 1-second overlap, and each segment is converted into a textual prompt. See `examples/prompt_example.txt` for a complete prompt example.
 ```
 python preprocessing_tuar.py
 ```
 ```
 python preprocessing_cgmh.py
 ```
-![Preprocessing](STFT_prompt.png)
+

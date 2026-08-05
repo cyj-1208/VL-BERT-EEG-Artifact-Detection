@@ -19,4 +19,10 @@ python preprocessing_tuar.py
 # CGMH dataset prompt
 python preprocessing_cgmh.py
 ```
+## EEG artifact detection model
+
+```
+# training & internal testing & external testing
+python workflow.py --feature all --model all --repeat 5
+```
 

@@ -9,9 +9,11 @@ This Pipeline implements a Channel-Wise Vision-Language BERT framework for EEG a
 * Hardware：NVIDIA RTX 4090 24G GPU
 * Environment：PyTorch 2.5.1、Hugging Face Transformers 4.51.3、Python 3.11.10、Ubuntu 24.04.1 LTS
 ## Datasets
+
 ## Preprocessing
+
 ## Prompt engineering
-Continuous EEG recordings are segmented into 2-second windows with a 1-second overlap, and each segment is converted into a textual prompt and an STFT spectrogram, which serve as the textual and visual inputs to the Vision-Language BERT framework, respectively. See `prompt/prompt_example.txt` for a complete prompt example.
+Continuous EEG recordings are segmented into 2-second windows with a 1-second overlap. Signal features are then extracted from each segment to generate a textual prompt, while an STFT spectrogram is simultaneously generated as the visual input. See `prompt/prompt_example.txt` for a complete prompt example.
 ```
 # Generate textual prompts and STFT spectrograms for the TUAR dataset
 python preprocessing_tuar.py

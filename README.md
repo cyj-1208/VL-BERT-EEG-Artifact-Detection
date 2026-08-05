@@ -13,9 +13,10 @@ This Pipeline implements a Channel-Wise Vision-Language BERT framework for EEG a
 ## Prompt Engineering
 Continuous EEG recordings are segmented into 2-second windows with a 1-second overlap, and each segment is converted into a textual prompt. See `prompt/prompt_example.txt` for a complete prompt example.
 ```
+# TUAR dataset prompt
 python preprocessing_tuar.py
-```
-```
+
+# CGMH dataset prompt
 python preprocessing_cgmh.py
 ```
 

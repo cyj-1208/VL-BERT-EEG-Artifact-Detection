@@ -22,7 +22,7 @@ python preprocessing_tuar.py
 python preprocessing_cgmh.py
 ```
 ## EEG artifact detection model
-
+Textual and visual features extracted from each EEG channel are transformed into text tokens and visual tokens, respectively, and concatenated into a multimodal input sequence. The sequence is then encoded by a Vision-Language BERT framework using BERT, DistilBERT, RoBERTa as the language encoder for channel-level EEG artifact classification.
 ```
 # training & internal testing & external testing
 python workflow.py --feature all --model all --repeat 5

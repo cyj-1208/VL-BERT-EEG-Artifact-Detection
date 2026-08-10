@@ -1,0 +1,8 @@
+Quantitative EEG: In a 2 second period after wavelet transformation
+    level 1 power = CH_level_1_power,
+    level 2 power = CH_level_2_power,
+    level 3 power = CH_level_3_power,
+    level 4 power = CH_level_4_power,
+    level 5 power = CH_level_5_power.
+
+Cumulative Effect Category:

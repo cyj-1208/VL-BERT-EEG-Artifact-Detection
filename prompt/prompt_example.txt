@@ -1,0 +1,9 @@
+Quantitative EEG: In a 2 second period after 
+    short time Fourier transformation,
+    delta power = 4.4561e-06,
+    theta power = 1.2044e-06,
+    alpha power = 9.4966e-07,
+    beta power = 1.9588e-06,
+    gamma power = 5.9159e-07.
+
+Cumulative Effect Category:

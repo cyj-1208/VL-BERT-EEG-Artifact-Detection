@@ -1,0 +1,9 @@
+Quantitative EEG: In a 2 second period after 
+    short time Fourier transformation,
+    delta power = CH_delta_power,
+    theta power = CH_theta_power,
+    alpha power = CH_alpha_power,
+    beta power = CH_beta_power,
+    gamma power = CH_gamma_power.
+
+Cumulative Effect Category:

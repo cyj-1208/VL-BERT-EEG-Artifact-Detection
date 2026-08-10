@@ -16,10 +16,10 @@ This Pipeline implements a Channel-Wise Vision-Language BERT framework for EEG a
 Continuous EEG recordings are segmented into 2-second windows with a 1-second overlap. Signal features are then extracted from each segment to generate a textual prompt, while an STFT spectrogram is simultaneously generated as the visual input. See `prompt/prompt_example.txt` for a complete prompt example.
 ```
 # Generate textual prompts and STFT spectrograms for the TUAR dataset
-python preprocessing_tuar.py
+python prompt_tuar.py
 
 # Generate textual prompts and STFT spectrograms for the CGMH dataset
-python preprocessing_cgmh.py
+python prompt_cgmh.py
 ```
 ## EEG artifact detection model
 Textual and visual features extracted from each EEG channel are transformed into text tokens and visual tokens, respectively, and concatenated into a multimodal input sequence. The sequence is then encoded by a Vision-Language BERT framework using BERT, DistilBERT, RoBERTa as the language encoder for channel-level EEG artifact classification.

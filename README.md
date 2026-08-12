@@ -12,6 +12,13 @@ This Pipeline implements a Channel-Wise Vision-Language BERT framework for EEG a
 
 ## Preprocessing
 The raw EEG signals were first converted to a bipolar montage, followed by filtering at 0.5–35 Hz, downsampling to 100 Hz, and amplitude clipping to −800 to 800 µV. Finally, the continuous EEG signals were segmented into 2-second windows with a 1-second overlap. The same preprocessing pipeline was applied to the CGMH dataset to ensure consistency across datasets.
+```
+# TUAR data preprocessing
+python ./preprocessing/preprocess_tuar.py
+
+# CGMH data preprocessing
+python ./preprocessing/preprocess_cgmh.py
+```
 ## Prompt engineering
 Continuous EEG recordings are segmented into 2-second windows with a 1-second overlap. Signal features are then extracted from each segment to generate a textual prompt, while an STFT spectrogram is simultaneously generated as the visual input. See `prompt/prompt_example.txt` for a complete prompt example.
 ```

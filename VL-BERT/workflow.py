@@ -46,14 +46,6 @@ DATASET_CONFIG = {
     },
 }
 
-def infer_dataset_name(json_path: str):
-    if "tuar" in json_path.lower():
-        return "tuar"
-    elif "cgmh" in json_path.lower():
-        return "cgmh"
-    else:
-        raise ValueError(f"Unknown dataset for json: {json_path}")
-
 def infer_dataset_name(json_path: str) -> str:
     json_path = json_path.lower()
     if "tuar" in json_path:
@@ -77,9 +69,9 @@ def main(model_list, feature_list, repeat):
 
         for feature_type in feature_list:
 
-            train_json = f"../tuar_stft_cqt_spec_prompt/tuar_stft_cqt_spec_prompt/output_{channel}_train_{feature_type}.json"
+            train_json = f"../tuar_stft_spec_prompt/output_{channel}_train_{feature_type}.json"
             test_jsons = {
-                "tuar": f"../tuar_stft_cqt_spec_prompt/tuar_stft_cqt_spec_prompt/output_{channel}_test_{feature_type}.json",
+                "tuar": f"../tuar_stft_spec_prompt/output_{channel}_test_{feature_type}.json",
                 "cgmh": f"../cgmh_stft_spec_prompt/output_{channel}_test_{feature_type}.json",
             }
 
@@ -152,19 +144,7 @@ def main(model_list, feature_list, repeat):
                                 "precision"
                             ]
                         )
-                    '''
-                    explain_out_dir = os.path.join(result_save_path, "explanations")
 
-                    explain_dataset_pipeline(
-                        model_dir=model_save_path,
-                        model_name=model_id,
-                        json_path=test_json,
-                        img_root=test_img_root,
-                        save_dir=explain_out_dir,
-                        steps=64, 
-                        test_mode=False    
-                    )
-                    '''
 
 if __name__ == "__main__":
     start_time = time.time()

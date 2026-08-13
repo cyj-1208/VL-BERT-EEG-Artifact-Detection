@@ -34,4 +34,9 @@ Textual and visual features extracted from each EEG channel are transformed into
 # training & internal testing & external testing
 python ./VL-BERT/workflow.py --feature all --model all --repeat 5
 ```
+## EEG artifact detection model interpretability
+```
+# training & internal testing & external testing
+python ./model_interpretability/integrated_gradients.py --feature stft --model google-bert/bert-base-uncased --repeat 5
+```
 

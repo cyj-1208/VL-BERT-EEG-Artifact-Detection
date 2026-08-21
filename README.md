@@ -8,7 +8,10 @@ This Pipeline implements a Channel-Wise Vision-Language BERT framework for EEG a
 ## Prerequisites
 * Hardware：NVIDIA RTX 4090 24G GPU
 * Environment：PyTorch 2.5.1、Hugging Face Transformers 4.51.3、Python 3.11.10、Ubuntu 24.04.1 LTS
-## Datasets
+
+## Data download
+The EEG data used in this study were obtained from the 
+[Temple University Hospital EEG Corpus (TUH EEG)](https://isip.piconepress.com/projects/nedc/html/tuh_eeg/).
 
 ## Preprocessing
 The raw EEG signals were first converted to a bipolar montage, followed by filtering at 0.5–35 Hz, downsampling to 100 Hz, and amplitude clipping to −800 to 800 µV. Finally, the continuous EEG signals were segmented into 2-second windows with a 1-second overlap. The same preprocessing pipeline was applied to the CGMH dataset to ensure consistency across datasets.

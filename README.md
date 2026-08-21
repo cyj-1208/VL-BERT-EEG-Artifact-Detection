@@ -11,7 +11,7 @@ This Pipeline implements a Channel-Wise Vision-Language BERT framework for EEG a
 
 ## Data download
 * Download the `TUAR` dataset including artifact and non-artifact samples from the [Temple University Hospital EEG Corpus (TUH EEG)](https://isip.piconepress.com/projects/nedc/html/tuh_eeg/) for model training and internal testing.
-* The CGMH dataset is a private clinical dataset and cannot be publicly released due to data privacy and institutional restrictions.
+* The `CGMH` dataset is a private clinical dataset and cannot be publicly released due to data privacy and institutional restrictions.
 
 ## Preprocessing
 The raw EEG signals were first converted to a bipolar montage, followed by filtering at 0.5–35 Hz, downsampling to 100 Hz, and amplitude clipping to −800 to 800 µV. Finally, the continuous EEG signals were segmented into 2-second windows with a 1-second overlap. The same preprocessing pipeline was applied to the CGMH dataset to ensure consistency across datasets.

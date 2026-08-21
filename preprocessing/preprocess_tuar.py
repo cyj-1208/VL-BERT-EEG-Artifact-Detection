@@ -4,9 +4,9 @@ from datetime import datetime, timezone
 import numpy as np
 import pandas as pd
 
-source_directory = "/Group16T/raw_data/tuh_eeg/artifact/edf/01_tcp_ar"
+source_directory = "/path/to/dataset"
 
-target_directory = "/Group16T/common/cyj/TUAR_multi_channel/fif"
+target_directory = "/path/to/dataset"
 
 os.makedirs(target_directory, exist_ok=True)
 

@@ -2,8 +2,8 @@ import time
 import argparse
 import os
 from utils.utils import execute_time, resize_data
-from VL-BERT.train import train_llm
-from VL-BERT.test import test_llm
+from train import train_llm
+from test import test_llm
 import random
 import json
 import torch

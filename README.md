@@ -25,7 +25,7 @@ python ./preprocessing/preprocess_cgmh.py
 ## Prompt engineering
 Continuous EEG recordings are segmented into 2-second windows with a 1-second overlap. Signal features are then extracted from each segment to generate a textual prompt, while an STFT spectrogram is simultaneously generated as the visual input. See `prompt/prompt_example.txt` for a complete prompt example.
 ```
-# Generate textual prompts and STFT spectrograms for the TUAR dataset
+# Generate textual prompts and STFT spectrograms for the dataset
 python ./prompt/prompt.py --dataset tuar --feature standard --image true
 ```
 ## EEG artifact detection model

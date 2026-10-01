@@ -26,10 +26,7 @@ python ./preprocessing/preprocess_cgmh.py
 Continuous EEG recordings are segmented into 2-second windows with a 1-second overlap. Signal features are then extracted from each segment to generate a textual prompt, while an STFT spectrogram is simultaneously generated as the visual input. See `prompt/prompt_example.txt` for a complete prompt example.
 ```
 # Generate textual prompts and STFT spectrograms for the TUAR dataset
-python ./prompt/prompt_tuar.py
-
-# Generate textual prompts and STFT spectrograms for the CGMH dataset
-python ./prompt/prompt_cgmh.py
+python ./prompt/prompt.py --dataset tuar --feature standard --image true
 ```
 ## EEG artifact detection model
 Textual and visual features extracted from each EEG channel are transformed into text tokens and visual tokens, respectively, and concatenated into a multimodal input sequence. The sequence is then encoded by a Vision-Language BERT framework using BERT, DistilBERT, RoBERTa as the language encoder for channel-level EEG artifact classification.

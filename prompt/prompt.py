@@ -16,7 +16,6 @@ Image generation:
     --image false
 
 """
-
 import argparse
 import json
 import logging
@@ -36,20 +35,20 @@ TUAR_INPUT_PATH = "/Group16T/common/cyj/code/channel_tuar"
 TUAR_SAVE_PATH = "/Group16T/common/cyj/code/tuar_stft_spec_prompt"
 
 TUAR_TEMPLATE_PATHS = {
-    "stft": "/Group16T/common/cyj/code/channel_report_template_stft.txt",
-    "standard": "/Group16T/common/cyj/code/channel_report_template_standard.txt",
-    "bandpass": "/Group16T/common/cyj/code/channel_report_template_bandpass.txt",
-    "wavelet": "/Group16T/common/cyj/code/channel_report_template_wavelet.txt"
+    "stft": "./prompt/channel_report_template_stft.txt",
+    "standard": "./prompt/channel_report_template_standard.txt",
+    "bandpass": "./prompt/channel_report_template_bandpass.txt",
+    "wavelet": "./prompt/channel_report_template_wavelet.txt"
 }
 
 CGMH_INPUT_PATH = "/Group16T/common/cyj/code/channel_cgmh_with_seizure"
-CGMH_SAVE_PATH = "/Group16T/common/cyj/code/cgmh_stft_spec_prompt_1"
+CGMH_SAVE_PATH = "/Group16T/common/cyj/code/cgmh_stft_spec_prompt"
 
 CGMH_TEMPLATE_PATHS = {
-    "stft": "/Group16T/common/cyj/code/channel_report_template_stft.txt",
-    "standard": "/Group16T/common/cyj/code/channel_report_template_standard.txt",
-    "bandpass": "/Group16T/common/cyj/code/channel_report_template_bandpass.txt",
-    "wavelet": "/Group16T/common/cyj/code/channel_report_template_wavelet.txt"
+    "stft": "./prompt/channel_report_template_stft.txt",
+    "standard": "./prompt/channel_report_template_standard.txt",
+    "bandpass": "./prompt/channel_report_template_bandpass.txt",
+    "wavelet": "./prompt/channel_report_template_wavelet.txt"
 }
 
 
@@ -57,8 +56,8 @@ TUAR_PRIOR_PATH = "channel_summary.csv"
 
 TUAR_TARGET_LABELS = ["artifact", "non_artifact"]
 TUAR_TARGET_FILES = {
-    "artifact": 20,
-    "non_artifact": 20,
+    "artifact": 20000,
+    "non_artifact": 20000,
 }
 
 TUAR_EXCLUDE_CHANNELS = []
